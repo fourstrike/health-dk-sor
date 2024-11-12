@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>PrioritizedEntitySpecialitiyCollection</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Liste over enhedens lægefaglige specialer. Der kan angives op til 8 per enhed.</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Enhedens lægefaglige specialer</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>3.0.0</Version>
+</Metadata>

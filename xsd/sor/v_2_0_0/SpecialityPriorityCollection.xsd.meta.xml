@@ -1,0 +1,15 @@
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>SpecialityTypeCollection</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Samling af speciale-prioriteter (Hoved-/bispeciale)</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Samling af specialer-prioriteter</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>2.0.0</Version>
+</Metadata>

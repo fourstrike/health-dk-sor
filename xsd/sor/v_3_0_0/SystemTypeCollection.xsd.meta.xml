@@ -1,0 +1,15 @@
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>SystemTypeCollection</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Samling af systemnavne.</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Samling af systemnavne</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>3.0.0</Version>
+</Metadata>

@@ -1,0 +1,16 @@
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>EanLocationCodeEntity</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Klasse der indeholder informationer der er knyttet til lokationsnummeret. Kommentar: Lokationsnummer med tilhørende oplysninger kan nedarves fra en overordnet enhed.
+</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Lokationsnummeroplysning</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm>Adresse</ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>3.0.0</Version>
+</Metadata>

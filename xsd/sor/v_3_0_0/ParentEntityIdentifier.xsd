@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:3.0.0" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:xkom="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/"
+           xmlns:kms="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"
+            xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"
+            xmlns:osak="http://rep.oio.dk/osak.dk/xml/schemas/2006/04/25/"
+            xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+           targetNamespace="urn:oio:nsi:3.0.0" 
+           elementFormDefault="qualified"            
+           attributeFormDefault="unqualified" 
+           xml:lang="EN"  
+           version="3.0.0">
+  
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorIdentifier.xsd"/>
+
+  <xs:element name="ParentEntityIdentifier" type="ParentEntityIdentifierType"/>
+	
+  <xs:simpleType name="ParentEntityIdentifierType">
+    <xs:restriction base="sor1:SorIdentifierType">
+   </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

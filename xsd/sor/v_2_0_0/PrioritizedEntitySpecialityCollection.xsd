@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:2.0.0" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="urn:oio:nsi:2.0.0" 
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified" 
+           xml:lang="EN" 
+           version="2.0"
+           >
+
+	<xs:include schemaLocation="PrioritizedEntitySpeciality.xsd"/>
+  
+	<xs:element name="PrioritizedEntitySpecialityCollection" type="PrioritizedEntitySpecialityCollectionType"/>
+	<xs:complexType name="PrioritizedEntitySpecialityCollectionType">
+		<xs:sequence>
+			<xs:element ref="PrioritizedEntitySpeciality" minOccurs="0" maxOccurs="8"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

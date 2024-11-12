@@ -1,0 +1,17 @@
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>PostalAddressInformation</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Fysisk adresse der angiver en beliggenhed hvor der kan leveres post. Postadressen kan som helhed nedarves fra en overordnet enhed.
+</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Postadresse</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>3.0.0</Version>
+</Metadata>
+

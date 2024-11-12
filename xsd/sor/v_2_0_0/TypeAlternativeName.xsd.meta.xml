@@ -1,0 +1,15 @@
+﻿<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>TypeAlternativeName</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Alternativ navn på en type i SOR.</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Alternativt navn</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>2.0.0</Version>
+</Metadata>

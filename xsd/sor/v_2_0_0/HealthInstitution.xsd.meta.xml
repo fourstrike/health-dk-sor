@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>HealthInstitution</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Organisation der er direkte økonomisk ansvarlig over for institutionsejer. Kommentar: Fx Aalborg Sygehus, som er ansvarlig overfor Region Nordjylland. I SOR har været anvendt termen sundhedsinstitution, men SOR indeholder institutioner, som ikke er 'sundhedsinstitutioner', men derimod 'institutioner med relation til sundhedsvæsenet'. Indeholder oplysninger relateret til institutionen (navn, sygehus-afdelingskode, type, adresse mv.).
+</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Sundhedsinstitution</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>2.0.0</Version>
+</Metadata>

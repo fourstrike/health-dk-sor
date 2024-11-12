@@ -1,0 +1,22 @@
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>SorIdentifier</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>
+      SOR-kode der relaterer til enheden. Genereres automatisk. En SOR-kode består af fire komponenter:
+      - Fortløbende nummer
+      - Namespace (7 cifre: "1000016")
+      - Partition-ID (2 cifre)
+      - Checksum-ciffer (1 cifre).
+      Den første mulige SOR-kode er dermed '11000016002'.
+    </DescriptionDanish>
+  </DescriptionStructure>
+  <Author>Sundhedsstyrelsen, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>SOR-ID /SOR-kode</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm>Adresse</ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>1.0.0</Version>
+</Metadata>

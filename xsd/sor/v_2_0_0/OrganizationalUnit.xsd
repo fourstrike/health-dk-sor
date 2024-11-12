@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:2.0.0" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:cvr="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/"
+           xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+           targetNamespace="urn:oio:nsi:2.0.0" 
+           elementFormDefault="qualified"
+           xml:lang="EN"
+           version="2.0.0"
+           >
+
+	<xs:include schemaLocation="PostalAddressInformation.xsd"/>
+	<xs:include schemaLocation="VisitingAddressInformation.xsd"/>
+	<xs:include schemaLocation="ActivityAddressInformation.xsd"/>
+	<xs:include schemaLocation="PrioritizedEntitySpecialityCollection.xsd"/>
+  <xs:include schemaLocation="GeographicalLocalisationIdentifier.xsd"/>
+  <xs:include schemaLocation="FutureMoveInformation.xsd"/>
+  <xs:include schemaLocation="EntityTypeIdentifier.xsd"/>
+	<xs:include schemaLocation="EanLocationCodeOption.xsd"/>
+
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/EntityName.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorIdentifier.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/LocalCode.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/ProviderIdentifier.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/ShakIdentifier.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/VirtualAddressInformation.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0"  schemaLocation="../v_1_0_0/ReplacesEntityCollection.xsd"/>
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0"  schemaLocation="../v_1_0_0/ReplacedByEntityCollection.xsd"/>
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorStatus.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/PharmacyIdentifier.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/LocalAttributeCollection.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/OrganizationalUnitInformation.xsd"/>
+  <xs:import schemaLocation="../../rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/CVR_ProductionUnitIdentifier.xsd" namespace="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/" />
+
+    
+<xs:element name="OrganizationalUnit" type="OrganizationalUnitType"/>
+	<xs:complexType name="OrganizationalUnitType">
+		<xs:sequence>
+			<xs:element ref="sor1:SorIdentifier" minOccurs="1"/>
+			<xs:element ref="sor1:EntityName" minOccurs="1"/>
+			<xs:element ref="EntityTypeIdentifier" minOccurs="0" />
+			<xs:element ref="sor1:LocalCode" minOccurs="0"/>
+			<xs:element ref="sor1:PharmacyIdentifier" minOccurs="0"/>
+			<xs:element ref="sor1:ShakIdentifier" minOccurs="0"/>
+			<xs:element ref="sor1:ProviderIdentifier" minOccurs="0"/>
+			<xs:element ref="EanLocationCodeOption" minOccurs="1"/>
+			<xs:element ref="PostalAddressInformation" minOccurs="0"/>
+			<xs:element ref="VisitingAddressInformation" minOccurs="0"/>
+			<xs:element ref="ActivityAddressInformation" minOccurs="0"/>
+			<xs:element ref="sor1:VirtualAddressInformation" minOccurs="0"/>
+      <xs:element ref="PrioritizedEntitySpecialityCollection" minOccurs="0"/>
+			<xs:element ref="sor1:SorStatus" minOccurs="1"/>
+			<xs:element ref="sor1:ReplacesEntityCollection" minOccurs="0"/>
+			<xs:element ref="sor1:ReplacedByEntityCollection"  minOccurs="0"/>
+			<xs:element ref="sor1:OrganizationalUnitInformation" minOccurs="0"/>
+			<xs:element ref="sor1:LocalAttributeCollection" minOccurs="0"/>
+      <xs:element ref="cvr:ProductionUnitIdentifier" minOccurs="0" />
+      <xs:element ref="GeographicalLocalisationIdentifier" minOccurs="0"/>
+      <xs:element ref="FutureMoveInformation" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

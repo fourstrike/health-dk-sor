@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="urn:oio:nsi:3.0.0"
+    xmlns="urn:oio:nsi:3.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+
+
+  <xs:element name="EntityInheritanceIndicator" type="EntityInheritanceIndicatorType" />
+  <xs:simpleType name="EntityInheritanceIndicatorType">
+    <xs:restriction base="xs:boolean">
+     </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

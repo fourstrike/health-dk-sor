@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:3.0.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:oio:nsi:3.0.0"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           xml:lang="EN" >
+
+  <xs:include schemaLocation="CommunicationSupplier.xsd"/>
+
+  <xs:element name ="CommunicationSupplierCollection" type="CommunicationSupplierCollectionType" />
+  <xs:complexType name ="CommunicationSupplierCollectionType">
+    <xs:sequence>
+      <xs:element ref ="CommunicationSupplier" maxOccurs="unbounded" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

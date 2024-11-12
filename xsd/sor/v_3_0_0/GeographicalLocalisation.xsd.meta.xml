@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>GeographicalLocalisation</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Gruppe af organisatoriske enheder der er beliggende inden for et fysisk afgrænset område, som er beskrevet med en eller flere besøgsadresser. F.eks. Vejle syghus. Kommentar: Hvilke konkrete kriterier, der afgrænser det "fysiske område" er det op til institutionsejeren at definere. Enhver aktivitet inden for sundhedsvæsenet skal kunne stedfestes entydigt.
+</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Geografisk lokalisation</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>3.0.0</Version>
+</Metadata>

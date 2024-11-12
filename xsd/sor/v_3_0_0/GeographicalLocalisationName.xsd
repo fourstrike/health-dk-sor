@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="urn:oio:nsi:3.0.0"
+    xmlns="urn:oio:nsi:3.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+  
+ 
+ <xs:element name="GeographicalLocalisationName" type="GeographicalLocalisationNameType" />
+  <xs:simpleType name="GeographicalLocalisationNameType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="40" />
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+
+
+</xs:schema>

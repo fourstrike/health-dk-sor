@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Sor"
+    targetNamespace="urn:oio:nsi:2.0.0"
+    xmlns="urn:oio:nsi:2.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+
+  <xs:include schemaLocation="GeographicalLocalisations.xsd" />
+  <xs:include schemaLocation="SorDataTypeCodes.xsd" />
+  <xs:include schemaLocation="SorTree.xsd" />
+
+  <xs:element name="Sor" type="SorType"/>
+  <xs:complexType name="SorType">
+    <xs:sequence>
+      <xs:element ref="GeographicalLocalisations" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="SorDataTypeCodes" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="SorTree" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

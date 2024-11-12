@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:3.0.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:oio:nsi:3.0.0"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           xml:lang="EN"
+           version="3.0.0">
+
+  <xs:element name ="OrganisationalLevelGroup" type="OrganisationalLevelGroupType" />
+
+  <xs:complexType name="OrganisationalLevelGroupType" final="restriction" >
+    <xs:sequence>
+      <xs:element name ="Identifier" type="xs:long" />
+      <xs:element name ="Name" type=" OrganisationalLevelGroupNameType " />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="OrganisationalLevelGroupNameType" final="restriction" >
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Klinisk administrativt" />
+      <xs:enumeration value="Kommunalt administrativt" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema> 

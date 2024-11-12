@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:2.0.0" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:cvr="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/"
+           xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+           targetNamespace="urn:oio:nsi:2.0.0" 
+           elementFormDefault="qualified" 
+           attributeFormDefault="unqualified"
+           xml:lang="EN" 
+           version="2.0.0">           
+
+  
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorIdentifier.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/EntityName.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/VirtualAddressInformation.xsd"/>
+	<xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorStatus.xsd"/>
+  <xs:import  schemaLocation="../../rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/CVR_CVRnumberIdentifier.xsd" namespace="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/" />
+
+  <xs:include schemaLocation="EntityTypeIdentifier.xsd"/>
+  <xs:include schemaLocation="PostalAddressInformation.xsd"/>
+	<xs:include schemaLocation="EanLocationCodeEntity.xsd"/>
+  
+  <xs:element name="InstitutionOwner" type="InstitutionOwnerType"/>
+	<xs:complexType name="InstitutionOwnerType">
+		<xs:sequence>
+			<xs:element ref="sor1:SorIdentifier" minOccurs="1"/>
+			<xs:element ref="sor1:EntityName" minOccurs="1"/>
+			<xs:element ref="EntityTypeIdentifier" minOccurs="1"/>
+			<xs:element ref="EanLocationCodeEntity" minOccurs="0"/>
+			<xs:element ref="PostalAddressInformation" minOccurs="1"/>
+			<xs:element ref="sor1:VirtualAddressInformation" minOccurs="1"/>
+			<xs:element ref="sor1:SorStatus" minOccurs="1"/>
+      <xs:element ref="cvr:CVRnumberIdentifier"	minOccurs="0" />
+  </xs:sequence>
+	</xs:complexType>
+</xs:schema>

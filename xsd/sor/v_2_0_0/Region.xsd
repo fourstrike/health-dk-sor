@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="urn:oio:nsi:2.0.0"
+    xmlns="urn:oio:nsi:2.0.0"
+    xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:kms="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"
+    elementFormDefault="qualified">
+
+  <xs:import namespace="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/" schemaLocation="../../rep.oio.dk/kms.dk/xml/schemas/2007/05/23/KMS_RegionCode.xsd"/>
+
+  <xs:include schemaLocation="TypeName.xsd"/>
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorStatus.xsd"/>
+
+  <xs:element name="Region" type="RegionType" />
+  <xs:complexType name ="RegionType" >
+    <xs:sequence>
+      <xs:element ref="kms:RegionCode" />
+      <xs:element ref="TypeName" />
+      <xs:element ref="sor1:SorStatus" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

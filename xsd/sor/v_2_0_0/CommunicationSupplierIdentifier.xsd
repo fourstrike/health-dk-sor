@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="urn:oio:nsi:2.0.0"
+    xmlns="urn:oio:nsi:2.0.0"
+    xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+  
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/CommunicationSupplier.xsd" />
+
+  <xs:element name="CommunicationSupplierIdentifier" type="sor1:CommunicationSupplierType" />
+
+</xs:schema>

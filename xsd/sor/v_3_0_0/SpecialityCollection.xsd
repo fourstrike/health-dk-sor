@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:3.0.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:oio:nsi:3.0.0"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           xml:lang="EN"
+           version="3.0.0">
+
+  <xs:include schemaLocation="Speciality.xsd"/>
+
+  <xs:element name ="SpecialityCollection" type="SpecialityCollectionType" />
+  <xs:complexType name="SpecialityCollectionType">
+    <xs:sequence>
+      <xs:element ref ="Speciality" maxOccurs="unbounded" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

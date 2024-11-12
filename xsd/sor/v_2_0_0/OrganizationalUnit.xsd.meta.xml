@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Metadata xmlns="http://rep.oio.dk/infostructurebase/schemas/2004/09/13/">
+  <Title>OrganizationalUnit</Title>
+  <DescriptionStructure>
+    <DescriptionEnglish />
+    <DescriptionDanish>Del af Sundhedsvæsenets Organisationsregister der er defineret af en myndighed eller af en organisation selv mhp. at synliggøre organisationens struktur. Kommentar: Baggrunden for at definere en organisatorisk enhed kan være at angive et direkte økonomisk ansvar over for en institution eller anden overordnet organisatorisk enhed. Fx Medicinsk Ambulatorium, som er økonomisk ansvarlig overfor Medicinsk Center, som igen er økonomisk ansvarlig overfor hospitalet. Andre årsager kan være samling af faglig kompetence, fysiske forhold m.v. Indeholder oplysninger relateret til den organisatoriske enhed (navn, sygehus-afdelingskode, type, adresse mv).
+</DescriptionDanish>
+  </DescriptionStructure>
+  <Author>NSI, SOR</Author>
+  <LabelStructure>
+    <LabelDanish>Organisatorisk enhed</LabelDanish>
+  </LabelStructure>
+  <ObjectTerm></ObjectTerm>
+  <PropertyTerm></PropertyTerm>
+  <RepresentationTerm></RepresentationTerm>
+  <Version>2.0.0</Version>
+</Metadata>
+

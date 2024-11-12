@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:3.0.0" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:xkom="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/"
+           xmlns:kms="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"
+            xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"
+            xmlns:osak="http://rep.oio.dk/osak.dk/xml/schemas/2006/04/25/"
+           targetNamespace="urn:oio:nsi:3.0.0" 
+           elementFormDefault="qualified"            
+           attributeFormDefault="unqualified" 
+           xml:lang="EN"  
+           version="3.0.0"> 
+  
+	<xs:import namespace="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/" schemaLocation="../../rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/XKOM_AddressPostal.xsd"/>
+	<xs:import namespace="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/" schemaLocation="../../rep.oio.dk/kms.dk/xml/schemas/2007/05/23/KMS_RegionCode.xsd"/>
+  <xs:import namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" schemaLocation="../../rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_MunicipalityCode.xsd"/>
+  <xs:import namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" schemaLocation="../../rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_StreetCode.xsd"/>
+  <xs:import namespace="http://rep.oio.dk/osak.dk/xml/schemas/2006/04/25/" schemaLocation="../../rep.oio.dk/osak.dk/xml/schemas/2006/04/25/OSAK_CoordETRS89z32NMeasure.xsd" />
+  <xs:import namespace="http://rep.oio.dk/osak.dk/xml/schemas/2006/04/25/" schemaLocation="../../rep.oio.dk/osak.dk/xml/schemas/2006/04/25/OSAK_CoordETRS89z32EMeasure.xsd" />
+
+  <xs:include schemaLocation="AdditionalAddressInformationText.xsd"/>
+  
+  <xs:element name="AddressInformation" type="AddressInformationType"/>
+	<xs:complexType name="AddressInformationType">
+		<xs:sequence>
+			<xs:element ref="xkom:AddressPostal"/>
+      <xs:element ref="cpr:MunicipalityCode" minOccurs="0"/>
+      <xs:element ref="cpr:StreetCode" minOccurs="0"/>
+      <xs:element ref="kms:RegionCode" minOccurs="0" />
+      <xs:element ref="AdditionalAddressInformationText" minOccurs="0" />
+      <xs:element ref="osak:CoordETRS89z32NMeasure" minOccurs="0" />
+      <xs:element ref="osak:CoordETRS89z32EMeasure" minOccurs="0" />
+  </xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:oio:nsi:3.0.0" xmlns="urn:oio:nsi:3.0.0" xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:include schemaLocation="EntityTypeIdentifier.xsd"/>
+  <xs:include schemaLocation="TypeName.xsd"/>
+
+  <xs:include schemaLocation="OrganisationalLevelIdentifier.xsd"/>
+  <xs:include schemaLocation="OrganisationalLevelGroupType.xsd"/>
+  <xs:include schemaLocation="MandatoryOrOptionalOrConditioned.xsd"/>
+
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorStatus.xsd"/>
+  <xs:element name="OrganisationalLevel" type="OrganisationalLevelType" />
+  <xs:complexType name="OrganisationalLevelType"  >
+    <xs:sequence>
+      <xs:element ref="OrganisationalLevelIdentifier" minOccurs="1"/>
+      <xs:element name="Name" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="254"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element ref="OrganisationalLevelGroup" minOccurs="1" />
+      <xs:element name="Order" type="xs:int" minOccurs="1"/>
+      <xs:element ref="MandatoryOrOptionalOrConditioned" minOccurs="1">
+		<xs:annotation>
+			<xs:documentation>
+               This allows for 1 conditional rule per OrganisationalLevelIdentifier. In reality probably 1 per group to have a uniform rule per group
+			   An extra optional element ConditionId could be added to allow for more conditional rules 
+			</xs:documentation>
+		</xs:annotation>	  
+	  </xs:element>
+	  
+      <xs:element ref="sor1:SorStatus" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

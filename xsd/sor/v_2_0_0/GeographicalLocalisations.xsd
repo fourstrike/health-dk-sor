@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="urn:oio:nsi:2.0.0"
+    xmlns="urn:oio:nsi:2.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:sor1 ="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+    elementFormDefault="qualified">
+
+  <xs:include schemaLocation="GeographicalLocalisationCollection.xsd"/>
+
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/CreatedAtTime.xsd"/>
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SnapshotDate.xsd"/>
+
+  <xs:element name="GeographicalLocalisations" type="GeographicalLocalisationsType"/>
+  <xs:complexType name="GeographicalLocalisationsType">
+    <xs:sequence>
+      <xs:element ref="sor1:CreatedAtTime" />
+      <xs:element ref="sor1:SnapshotDate" />
+      <xs:element ref="GeographicalLocalisationCollection" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
+

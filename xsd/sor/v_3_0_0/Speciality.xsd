@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="urn:oio:nsi:3.0.0"
+    xmlns="urn:oio:nsi:3.0.0"
+    xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+  <xs:include schemaLocation="SpecialityIdentifier.xsd"/>
+  <xs:include schemaLocation="TypeName.xsd"/>
+  <xs:include schemaLocation="AlternativeTypeName.xsd"/>
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SorStatus.xsd"/>
+
+  <xs:element name="Speciality" type="SpecialityType" />
+  <xs:complexType name ="SpecialityType" >
+    <xs:sequence>
+      <xs:element ref="SpecialityIdentifier" />
+      <xs:element ref="TypeName" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="AlternativeTypeName" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="sor1:SorStatus" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

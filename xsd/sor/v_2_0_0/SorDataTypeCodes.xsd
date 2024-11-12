@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="urn:oio:nsi:2.0.0"
+    xmlns="urn:oio:nsi:2.0.0"
+    xmlns:sor1="urn:oio:sundhedsstyrelsen:organisation:1.0.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
+>
+  <xs:include schemaLocation="EntityTypeCollection.xsd"/>
+  <xs:include schemaLocation="SorTypeCollection.xsd"/>
+  <xs:include schemaLocation="SpecialityCollection.xsd"/>
+  <xs:include schemaLocation="SpecialityPriorityCollection.xsd"/>
+  <xs:include schemaLocation="SystemSupplierCollection.xsd"/>
+  <xs:include schemaLocation="SystemTypeCollection.xsd"/>
+  <xs:include schemaLocation="RegionCollection.xsd"/>
+  <xs:include schemaLocation="EdiAdministratorCollection.xsd"/>
+  <xs:include schemaLocation="CommunicationSupplierCollection.xsd"/>
+
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/CreatedAtTime.xsd"/>
+  <xs:import namespace="urn:oio:sundhedsstyrelsen:organisation:1.0.0" schemaLocation="../v_1_0_0/SnapshotDate.xsd"/>
+
+  <xs:element name="SorDataTypeCodes" type="SorDataTypeCodesType" />
+  <xs:complexType name="SorDataTypeCodesType">
+    <xs:sequence>
+      <xs:element ref="sor1:CreatedAtTime" />
+      <xs:element ref="sor1:SnapshotDate" />
+      <xs:element ref="EntityTypeCollection" minOccurs="0" />
+      <xs:element ref="SorTypeCollection" minOccurs="0" />
+      <xs:element ref="SpecialityCollection" minOccurs="0" />
+      <xs:element ref="SpecialityPriorityCollection" minOccurs="0" />
+      <xs:element ref="RegionCollection" minOccurs="0" />
+      <xs:element ref="EdiAdministratorCollection" minOccurs="0" />
+      <xs:element ref="SystemTypeCollection" minOccurs="0" />
+      <xs:element ref="SystemSupplierCollection" minOccurs="0" />
+      <xs:element ref="CommunicationSupplierCollection" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

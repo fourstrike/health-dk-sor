@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="urn:oio:nsi:3.0.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:oio:nsi:3.0.0"
+           elementFormDefault="qualified">
+
+  <xs:include schemaLocation="EanLocationCodeEntity.xsd" />
+  <xs:include schemaLocation="EntityInheritanceIndicator.xsd" />
+
+ 
+  <xs:element name="EanLocationCodeOption" type="EanLocationCodeOptionType"/>
+
+  <xs:complexType name="EanLocationCodeOptionType" >
+    <xs:choice>
+      <xs:element ref="EntityInheritanceIndicator" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="EanLocationCodeEntity" minOccurs="0" maxOccurs="1" />
+    </xs:choice>
+  </xs:complexType>
+
+</xs:schema>
